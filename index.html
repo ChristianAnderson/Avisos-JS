@@ -1,0 +1,223 @@
+<!doctype html>
+<head>
+
+<title>PGJE COLIMA</title>
+
+<!-- Fuente de User Interface de Jquery-->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<link rel="stylesheet" type="text/css" href="css/cssOrdenes.css" />
+
+<!-- FIN DE MENU DE CADA APLICACION -->
+<script src="js/jquery-1.11.1.js" type="text/javascript"></script>
+
+<!-- USER INTERFACE DE JQUERY POR SERVIDOR REMOTO CON ANIMACIONES internet requerido -->
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">                                                                          
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- TOASTER ANNOUNCEMT SCRIPT-->
+<SCRIPT LANGUAGE="JavaScript" SRC="js/toastr.js"></SCRIPT>
+ <!-- USER INTERFACE DE JQUERY POR SERVIDOR LOCAL INTERNO -->
+ 
+<!--<link rel="stylesheet" href="jquery-ui.min.css">       <!-- ya -->
+<!--<script src="../js/jquery.js"></script>
+<script src="../js/jquery-ui.min.js"></script>      <!-- ya -->
+<SCRIPT LANGUAGE="JavaScript">
+  function Aviso(tipo){
+    var aviso=tipo;
+    if(aviso=='Success') 
+      toastr.success(aviso);
+    else if(aviso=='Warning') 
+      toastr.warning(aviso);
+    else if(aviso=='Info') 
+      toastr.info(aviso);
+    else if(aviso=='Error') 
+      toastr.error(aviso);
+  }
+</SCRIPT>
+
+<body>
+
+   <!-- Navigation -->
+    <nav class="navbar navbar-default  navbar-relative-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"> <span>Toastrs to show announcements</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <p class="lead">Select the toaster you wanna see</p>
+                <div class="list-group">
+                    <a href="#" Onclick="Aviso('Success');" id="" class="list-group-item list-group-item-success">Success</a>
+                    <a href="#" Onclick="Aviso('Warning');" id="" class="list-group-item list-group-item-warning">Warning</a>
+                    <a href="#" Onclick="Aviso('Info');" id="" class="list-group-item list-group-item-info">Info</a>
+                    <a href="#" Onclick="Aviso('Error');" id="" class="list-group-item list-group-item-danger">Error</a>
+
+                </div>
+            </div>
+
+            <div class="col-md-9">
+              <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail">
+                 
+                  <div class="caption">
+                    <h4 class="pull-right">$0.00</h4>
+                    <h4><a href="#">Success</a>
+                    </h4>
+                    <p>You can use it to provide confidence to the client</p>
+                  </div>
+
+                  <div class="ratings">
+                    <p class="pull-right">15 reviews</p>
+                    <p>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                     
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail">
+                 
+                  <div class="caption">
+                    <h4 class="pull-right">$0.00</h4>
+                    <h4><a href="#">Warning</a>
+                    </h4>
+                    <p>You can use it to prevent the client</p> <br>
+                  </div>
+
+                  <div class="ratings">
+                    <p class="pull-right">5 reviews</p>
+                    <p>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail">
+                 
+                  <div class="caption">
+                    <h4 class="pull-right">$0.00</h4>
+                    <h4><a href="#">Info</a>
+                    </h4>
+                    <p>Use it to give information</p> <br>
+                  </div>
+
+                  <div class="ratings">
+                    <p class="pull-right">10 reviews</p>
+                    <p>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail">
+                 
+                  <div class="caption">
+                    <h4 class="pull-right">$0.00</h4>
+                    <h4><a href="#">Error</a>
+                    </h4>
+                    <p>You can use it when something goes wrong</p> <br>
+                  </div>
+
+                  <div class="ratings">
+                    <p class="pull-right">5 reviews</p>
+                    <p>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                      <span class="glyphicon glyphicon-star"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 col-lg-4 col-md-4">
+                <h4><a href="#">Like this Work?</a>
+                </h4>
+                <p>If you like this template, then join to contributors</p>
+                <a class="btn btn-primary" target="_blank" href="https://github.com/ChristianAnderson/">View my Profile</a>
+              </div>              
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    <!-- /.container -->
+
+    <div class="container">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Christian Ramos 2015</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+</body>
+</html>
+
